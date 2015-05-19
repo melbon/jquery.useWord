@@ -1,0 +1,22 @@
+{
+  "name": "jquery.useWord",
+  "main": "jquery.useWord.js",
+  "version": "2.0.0",
+  "homepage": "https://github.com/melbon/jquery.useWord",
+  "authors": [
+    "melbon <mario@vidov.it>"
+  ],
+  "description": "jQuery Plugin for ::first-word and ::last-word selector",
+  "keywords": [
+    "::first-word",
+    "::last-word"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
