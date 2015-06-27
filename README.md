@@ -11,7 +11,7 @@ bower install useword
 ```
 ## Usage
 ```javascript
-$(":input").useWord();
+$(selector).useWord();
 ```
 ## Configuration
 #####word
