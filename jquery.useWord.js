@@ -1,6 +1,6 @@
 /*
  * February 2015
- * useWord 2.0.0
+ * useWord 2.0.2
  * @author Mario Vidov
  * @url http://vidov.it
  * @twitter MarioVidov
@@ -12,7 +12,7 @@ $.fn.useWord = function(options) {
     }, options);
 
     return this.each(function() {
-        var text = this.innerText.trim().split(" ");
+        var text = this.innerHTML.trim().split(" ");
 
         switch (settings.word) {
             case "first": {
