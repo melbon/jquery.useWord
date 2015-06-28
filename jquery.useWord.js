@@ -11,18 +11,20 @@ $.fn.useWord = function(options) {
         word: "first"
     }, options);
 
-    var text = this.text().trim().split(" ");
+    return this.each(function() {
+        var text = this.innerText.trim().split(" ");
 
-    switch (settings.word) {
-        case "first": {
-            var first = text.shift();
-            this.html((text.length > 0 ? "<span class='useWord-first'>" + first + "</span> " : first) + text.join(" "));
+        switch (settings.word) {
+            case "first": {
+                var first = text.shift();
+                this.innerHTML = ((text.length > 0 ? "<span class='useWord-first'>" + first + "</span> " : first) + text.join(" "));
+            }
+            break;
+            case "last": {
+                var last = text.pop();
+                this.innerHTML = (text.join(" ") + (text.length > 0 ? " <span class='useWord-last'>" + last + "</span>" : last));
+            }
+            break;
         }
-        break;
-        case "last": {
-            var last = text.pop();
-            this.html(text.join(" ") + (text.length > 0 ? " <span class='useWord-last'>" + last + "</span>" : last));
-        }
-        break;
-    }
+    });
 };
