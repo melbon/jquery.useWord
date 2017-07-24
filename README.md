@@ -14,7 +14,7 @@ bower install useword
 $(selector).useWord();
 ```
 ## Configuration
-#####word
+#### word
 what word do you want to select
 ```javascript
 default: "first"
